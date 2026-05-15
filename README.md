@@ -2,6 +2,15 @@
 
 **WeatherSnap** is a high-fidelity Android application built with Jetpack Compose that allows users to capture live weather reports with integrated camera evidence and automated image optimization.
 
+---
+
+## 🔗 Download & Install
+**[Latest Release: WeatherSnap v1.0](https://github.com/himendersharma0712/WeatherSnap/releases/tag/v1.0)**
+
+*Download the latest APK to test the live weather telemetry and camera evidence features on your device.*
+
+---
+
 ## 🚀 The Approach
 This project was developed with a **Mobile-First, Performance-Heavy** mindset, focusing on three core pillars:
 * **Thread Safety**: Offloading heavy database and image processing to background worker pools (`Dispatchers.IO`).
@@ -26,23 +35,23 @@ The app follows the **MVVM (Model-View-ViewModel)** architectural pattern to ens
 ### 1. Dashboard & Discovery
 The home screen features an **IdleStateWidget** with custom gradients and a reactive search bar with "pill-row" city suggestions.
 
-<img width="400" height="800" alt="Screenshot_2026-05-15-11-28-21-88_f8ef79f8ef6000ec79134d7eb9eefdfc" src="https://github.com/user-attachments/assets/8c0efabc-90e7-41ca-9212-3c89c50d8d30" />
+<img width="400" height="800" alt="Dashboard Idle State" src="https://github.com/user-attachments/assets/8c0efabc-90e7-41ca-9212-3c89c50d8d30" />
 
-<img width="400" height="800" alt="Screenshot_2026-05-15-11-22-55-83_f8ef79f8ef6000ec79134d7eb9eefdfc" src="https://github.com/user-attachments/assets/8db643c2-b269-42f9-99e9-854f3154f712" />
+<img width="400" height="800" alt="City Search Suggestions" src="https://github.com/user-attachments/assets/8db643c2-b269-42f9-99e9-854f3154f712" />
 
 
 ### 2. Live Weather Telemetry
 Once a city is selected, the app fetches real-time coordinates and current conditions (Humidity, Wind, Pressure) displayed with distinct, color-coded backgrounds for better data visualization.
 
-<img width="400" height="800" alt="Screenshot_2026-05-15-11-23-21-53_f8ef79f8ef6000ec79134d7eb9eefdfc" src="https://github.com/user-attachments/assets/81049583-e931-47a4-86f0-9da3df7992bb" />
+<img width="400" height="800" alt="Weather Details Loading" src="https://github.com/user-attachments/assets/81049583-e931-47a4-86f0-9da3df7992bb" />
 
 
 ### 3. Evidence Capture & Compression
 The custom camera interface allows for immediate "snap" actions. Post-capture, the app executes a **JPEG Discrete Cosine Transform compression algorithm** at a 70% quality factor, shrinking raw assets (e.g., 5612 KB -> 1588 KB) before saving to the Room DB.
 
-<img width="400" height="800" alt="Screenshot_2026-05-15-11-25-41-48_f8ef79f8ef6000ec79134d7eb9eefdfc" src="https://github.com/user-attachments/assets/b4d2825c-f158-409d-8de7-d1ccfc897465" />
+<img width="400" height="800" alt="Camera Viewfinder HUD" src="https://github.com/user-attachments/assets/b4d2825c-f158-409d-8de7-d1ccfc897465" />
 
-<img width="400" height="800" alt="Screenshot_2026-05-15-11-41-21-88_f8ef79f8ef6000ec79134d7eb9eefdfc" src="https://github.com/user-attachments/assets/1a1537b8-8dd5-4f24-a72a-ee801f3a3a31" />
+<img width="400" height="800" alt="Create Report Form" src="https://github.com/user-attachments/assets/1a1537b8-8dd5-4f24-a72a-ee801f3a3a31" />
 
 ---
 
