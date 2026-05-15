@@ -254,7 +254,7 @@ fun SearchSection(
                 value = query,
                 onValueChange = onQueryChange,
                 label = { Text("City") },
-                modifier = Modifier.weight(1f).height(60.dp),
+                modifier = Modifier.weight(1f).height(65.dp),
                 colors = OutlinedTextFieldDefaults.colors(
                     focusedBorderColor = AccentGreen,
                     unfocusedBorderColor = Color.Gray,
